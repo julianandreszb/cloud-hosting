@@ -2,8 +2,12 @@
     --color-accent: #ff3400;
     --color-body: #918ca4;
     --color-headings: #1b0760;
-    --color-primary: #2584ff;
+    --color-primary: #247cef;
     --color-secondary: #00d9ff;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 /*region Typography*/
@@ -57,6 +61,7 @@ p {
     }
 
 }
+
 /*endregion*/
 
 /*region Links*/
@@ -121,6 +126,7 @@ a {
         font-size: 1.2rem;
     }
 }
+
 /*endregion*/
 
 /*region Lists*/
@@ -150,6 +156,7 @@ a {
         padding-left: 0;
     }
 }
+
 /*endregion*/
 
 /*region Icons*/
@@ -170,5 +177,71 @@ a {
     border-radius: 100%;
     justify-content: center;
     align-items: center;
+}
+
+/*endregion*/
+
+/*region Buttons*/
+.btn {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background-color: #2172dc;
+}
+
+.btn--secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.btn--secondary:hover {
+    background-color: #05cdf0;
+}
+
+
+.btn--accent {
+    background-color: var(--color-accent);
+    color: #fff;
+}
+
+.btn--accent:hover {
+    background-color: #ec3000;
+}
+
+.btn--outline {
+    background-color: #fff;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+    background-color: var(--color-headings);
+    color: #fff;
+}
+
+.btn--block {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5rem;
+    }
 }
 /*endregion*/
