@@ -8,18 +8,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
+        <script src="js/main.js" defer></script>
         <title>Moshify</title>
     </head>
-    <body style="padding: 5rem;" >
-        <div class="callout callout--primary">
-            <div class="grid grid--1x2">
-                <div class="callout__content">
-                    <h2 class="callout__heading" >Ready to get started</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro praesentium recusandae
-                        repellendus? Accusamus deleniti deserunt, doloremque molestiae nemo quaerat quas?</p>
-                </div>
-                <a class="btn btn--secondary btn--stretched" href="#">Get Started</a>
+    <body style="padding: 5rem;">
+
+        <div class="collapsible collapsible--expanded">
+            <header class="collapsible__header" >
+                <h2 class="collapsible__heading" >Item 1</h2>
+                <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="images/sprite.svg#chevron"></use>
+                </svg>
+            </header>
+            <div class="collapsible__content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quisquam quos voluptate? Illo iste quam
+                recusandae. Dolorem ea, nobis. Id?
             </div>
         </div>
+
     </body>
 </html>
