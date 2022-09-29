@@ -12,21 +12,19 @@
         <title>Moshify</title>
     </head>
     <body>
-        <section class="block block--skewed-right">
-            <header class="block__header">
-                <h2 class="block__heading">Heading</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet maxime nam possimus quo?
-                    Accusamus consequuntur in ipsa laudantium veniam?</p>
-            </header>
-        </section>
-        <section class="block block--dark block--skewed-left">
-            <header class="block__header">
-                <div class="container" >
-                    <h2 class="block__heading">Heading</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eveniet maxime nam possimus quo?
-                        Accusamus consequuntur in ipsa laudantium veniam?</p>
-                </div>
-            </header>
-        </section>
+        <nav class="nav collapsible">
+            <a class="nav__brand" href="/">
+                <img src="images/logo.svg" alt="">
+            </a>
+            <svg class="icon icon--white nav__toggle">
+                <use xlink:href="images/sprite.svg#menu"></use>
+            </svg>
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item" ><a href="#">Hosting</a></li>
+                <li class="nav__item" ><a href="#">VPS</a></li>
+                <li class="nav__item" ><a href="#">Domain</a></li>
+                <li class="nav__item" ><a href="#">Pricing</a></li>
+            </ul>
+        </nav>
     </body>
 </html>
