@@ -209,10 +209,18 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     margin: 1rem 0;
+    outline: 0;
     padding: 2rem 3rem;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+.btn .icon {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 
 .btn--primary {
@@ -295,7 +303,7 @@ a {
 .input-group .input {
     border: 0;
     flex-grow: 1;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -596,6 +604,7 @@ a {
     max-height: 100vh;
     opacity: 1;
 }
+
 /*endregion*/
 
 /*region Blocks */
@@ -611,6 +620,7 @@ a {
 .block__heading {
     margin-top: 0;
 }
+
 .block--dark {
     background-color: #000;
     color: #7b858b;
@@ -629,6 +639,7 @@ a {
     clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
     padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
+
 /*endregion*/
 
 /*region Containers */
@@ -636,6 +647,7 @@ a {
     max-width: 1140px;
     margin: 0 auto;
 }
+
 /*endregion*/
 
 /*region Navigations */
@@ -672,6 +684,7 @@ a {
     transition: box-shadow 0.3s;
     cursor: pointer;
 }
+
 .collapsible--expanded .nav__toggle {
     opacity: 1;
     box-shadow: 0 0 0 3px #666;
@@ -699,12 +712,14 @@ a {
         border: 0;
     }
 }
+
 /*endregion*/
 
 /* region Hero */
 .hero {
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
 }
+
 .hero__tagline {
     font-size: 2rem;
     color: #b9c3cf;
@@ -725,6 +740,34 @@ a {
     .hero_content {
         text-align: left;
         align-self: center;
+    }
+}
+
+/*endregion*/
+
+/*region Domain Blocks */
+.block-domain .input-group {
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+
+.block-domain__prices {
+    align-items: center;
+    display: grid;
+    font-size: 2rem;
+    font-weight: 600;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+@media screen and (min-width: 768px) {
+    .block-domain__prices {
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     }
 }
 /*endregion*/
