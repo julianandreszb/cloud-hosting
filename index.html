@@ -12,46 +12,50 @@
         <title>Moshify</title>
     </head>
     <body>
-        <section class="block">
-            <header class="block__header" >
-                <h2>What our Customers are Saying</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, voluptas.</p>
-            </header>
-            <div class="container">
-                <div class="card testimonial">
-                    <div class="grid grid--1x2">
-                        <div class="testimonial__image">
-                            <img src="images/testimonial.jpg" alt="A happy, smiling customer" />
-                            <span class="icon-container icon-container--accent">
-                                <svg class="icon icon--white icon--small">
-                                  <use xlink:href="images/sprite.svg#quotes"></use>
-                                </svg>
-                            </span>
-                        </div>
-                        <blockquote class="quote">
-                            <p class="quote__text">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio
-                                officiis dolore earum error eaque perferendis laudantium sed praesentium
-                                dolorum.
-                            </p>
-                            <footer>
-                                <div class="media">
-                                    <div class="media__image">
-                                        <svg class="icon icon--primary quote__line">
-                                            <use xlink:href="images/sprite.svg#line"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="media__body">
-                                        <h3 class="media__title quote__author">John Smith</h3>
-                                        <p class="quote__organization">ABC Company</p>
-                                    </div>
-                                </div>
-                            </footer>
-                        </blockquote>
+        <footer class="block block--dark footer">
+            <div class="container grid footer__sections">
+                <section class="collapsible collapsible--expanded footer__section">
+                    <header class="collapsible__header">
+                        <h2 class="collapsible__heading footer__heading">Item 1</h2>
+                        <svg class="icon icon--white collapsible__chevron">
+                            <use xlink:href="images/sprite.svg#chevron"></use>
+                        </svg>
+                    </header>
+                    <div class="collapsible__content">
+                        <ul class="list">
+                            <li><a href="#">Lorem ipsum.</a></li>
+                            <li><a href="#">Lorem ipsum.</a></li>
+                            <li><a href="#">Lorem ipsum.</a></li>
+                        </ul>
                     </div>
-                </div>
-
+                </section>
+                <section class="collapsible footer__section">
+                    <header class="collapsible__header">
+                        <h2 class="collapsible__heading footer__heading">Item 1</h2>
+                        <svg class="icon icon--white collapsible__chevron">
+                            <use xlink:href="images/sprite.svg#chevron"></use>
+                        </svg>
+                    </header>
+                    <div class="collapsible__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, accusamus.
+                    </div>
+                </section>
+                <section class="collapsible footer__section">
+                    <header class="collapsible__header">
+                        <h2 class="collapsible__heading footer__heading">Item 1</h2>
+                        <svg class="icon icon--white collapsible__chevron">
+                            <use xlink:href="images/sprite.svg#chevron"></use>
+                        </svg>
+                    </header>
+                    <div class="collapsible__content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, accusamus.
+                    </div>
+                </section>
+                <section class="footer__brand">
+                    <img src="images/logo.svg" alt="">
+                    <p class="footer__copyright">2021 Julian Zapata</p>
+                </section>
             </div>
-        </section>
+        </footer>
     </body>
 </html>
